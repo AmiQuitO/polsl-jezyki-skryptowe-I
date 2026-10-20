@@ -2,7 +2,7 @@ import math
 
 liczby = []
 
-with open("zad16txt.txt", "r", encoding="utf-8") as dane:
+with open("in/zad016txt.txt", "r", encoding="utf-8") as dane:
     plik = dane.read()
     elementy = plik.split()
     liczby = [int(element) for element in elementy] 
