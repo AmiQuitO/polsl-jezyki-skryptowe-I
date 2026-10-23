@@ -1,4 +1,4 @@
-def rozwiaz_gauss(A, b, eps=1e-8):
+def Rozwiaz_Gauss(A, b, eps=1e-8):
     n = len(A)
 
     if n == 0 or len(b) != n:
@@ -54,7 +54,7 @@ b = [5, 1]
 
 
 try:
-    wynik = rozwiaz_gauss(A, b)
+    wynik = Rozwiaz_Gauss(A, b)
 
     for i in range(len(wynik)):
         print(f"x{i + 1} = {wynik[i]:.6f}")
