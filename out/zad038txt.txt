@@ -1,0 +1,3 @@
+Sortowanie babelkowe: [12, 17, 24, 27, 31, 45, 54, 54, 77, 89]
+Sortowanie przez wstawianie: [12, 17, 24, 27, 31, 45, 54, 54, 77, 89]
+Srotowanie szybkie: [12, 17, 24, 27, 31, 45, 54, 54, 77, 89]
