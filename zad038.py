@@ -1,17 +1,3 @@
-def main():
-    lista: list[int]
-    with open("in/zad038txt.txt", "r", encoding="utf-8") as plik:
-        lista = [int(x) for x in plik.read().split()]
-
-    print(lista)
-    print(f"Sortowanie babelkowe: {Sortowanie_babelkowe(lista.copy())}")
-    print(f"Sortowanie przez wstawianie: {Sortowanie_przez_wstawianie(lista.copy())}")
-    print(f"Srotowanie szybkie: {Sortowanie_szybkie(lista.copy())}")
-
-    with open("out/zad038txt.txt", "w", encoding="utf-8") as plik:
-        print(f"Sortowanie babelkowe: {Sortowanie_babelkowe(lista.copy())}", file=plik)
-        print(f"Sortowanie przez wstawianie: {Sortowanie_przez_wstawianie(lista.copy())}", file=plik)
-        print(f"Srotowanie szybkie: {Sortowanie_szybkie(lista.copy())}", file=plik)
 
 def Sortowanie_babelkowe(l: list[int]):
     sort = False
@@ -57,7 +43,17 @@ def Sortowanie_szybkie(l: list[int]):
             wieksze.append(liczba)
     return Sortowanie_szybkie(mniejsze) + rowne + Sortowanie_szybkie(wieksze)
 
+if __name__ == "__main__":
+    lista: list[int]
+    with open("in/zad038txt.txt", "r", encoding="utf-8") as plik:
+        lista = [int(x) for x in plik.read().split()]
 
+    print(lista)
+    print(f"Sortowanie babelkowe: \n{Sortowanie_babelkowe(lista.copy())}")
+    print(f"Sortowanie przez wstawianie: \n{Sortowanie_przez_wstawianie(lista.copy())}")
+    print(f"Srotowanie szybkie: \n{Sortowanie_szybkie(lista.copy())}")
 
-
-main()
+    with open("out/zad038txt.txt", "w", encoding="utf-8") as plik:
+        print(f"Sortowanie babelkowe: {Sortowanie_babelkowe(lista.copy())}", file=plik)
+        print(f"Sortowanie przez wstawianie: {Sortowanie_przez_wstawianie(lista.copy())}", file=plik)
+        print(f"Srotowanie szybkie: {Sortowanie_szybkie(lista.copy())}", file=plik)
