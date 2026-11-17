@@ -1,0 +1,6 @@
+RAPORT ALGORYTMÓW SORTOWANIA
+
+-- -----NAZWA -- LICZBA SORTOWANYCH PLIKOW -- SREDNI CZAS -- ODCHYLENIE STANDARDOWE
+1. babelkowe -- 5 -- 0.218602 s -- 0.036428 s
+2. przez wstawianie -- 5 -- 0.022591 s -- 0.001014 s
+3. szybkie -- 5 -- 0.001150 s -- 0.000028 s

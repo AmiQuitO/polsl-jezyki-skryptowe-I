@@ -2,7 +2,7 @@ import cmath
 
 def Rownanie_kwadratowe(a, b, c):
     
-    delta = b ** 2 - 4 * a * b
+    delta = b ** 2 - 4 * a * c
 
     x1 = (-b - cmath.sqrt(delta)) / (2 * a)
     x2 = (-b + cmath.sqrt(delta)) / (2 * a)

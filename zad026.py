@@ -24,7 +24,7 @@ def main():
     
     print("============ Przyblizenie e^x ============")
     
-    X = 1
+    X = 0.5
     N = 10
     
     z_szeregu = Przyblizenie_e(X, N)

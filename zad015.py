@@ -8,6 +8,8 @@ while True:
         break
     liczby.append(int(l))
 
+liczby.sort()
+
 suma = 0
 srednia = 0
 mediana = 0

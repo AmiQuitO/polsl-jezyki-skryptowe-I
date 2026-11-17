@@ -1,7 +1,7 @@
 def main():
     liczba = int(input("Podaj liczbe do silni: "))
     if liczba <= 0:
-        return
+        return 0
     silnia = 1
     for i in range(1, liczba+1):
         silnia *= i

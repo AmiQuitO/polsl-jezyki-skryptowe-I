@@ -7,6 +7,8 @@ with open("in/zad016txt.txt", "r", encoding="utf-8") as dane:
     elementy = plik.split()
     liczby = [int(element) for element in elementy] 
 
+liczby.sort()
+
 suma = 0
 srednia = 0
 mediana = 0

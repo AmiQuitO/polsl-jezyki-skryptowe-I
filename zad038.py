@@ -1,5 +1,7 @@
 
 def Sortowanie_babelkowe(l: list[int]):
+    if len(l) <= 1:
+        return l
     sort = False
     i = 0
     while True:
